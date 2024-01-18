@@ -3,12 +3,12 @@ _A guide for the creation of new repositories in our class organization and for 
 
 ## Introduction
 This repository is intended as both a guide to support you in two key tasks:
-1. Creating new repositories in our [course organization](https://github.com/nic-dgl104-winter-2024)
-2. Managing MIT App Inventor repositories and code review strategies
+1. [Creating new repositories](#creating-new-repositories) in our [course organization](https://github.com/nic-dgl104-winter-2024)
+2. [Managing MIT App Inventor repositories](#managing-an-mit-app-inventor-repository) and [code review strategies](#ai2-code-review-strategies)
 
 Both of these are critical since all your DGL 104 work should be stored on our course organization and not in your personal GitHub account. I'll never close this organization, so your code will always be accessible. If you prefer to make your projects developed for DGL 104 available on your personal GitHub account I can demonstrate how to do this at the end of the semester.
 
-Note that this repository also contains an MIT App Inventory `.aia` file for a complete implementation of the [Space Invaders](https://appinventor.mit.edu/explore/ai2/space-invaders) game (although with some minor modifications). To get the most out of this repository you should read this `README.md` carefully, and also closely examine the repository pull requests, which demonstrate an approach to code review for `.aia` files.
+Note that this repository also contains an MIT App Inventory `.aia` file for a complete implementation of the [Space Invaders](https://appinventor.mit.edu/explore/ai2/space-invaders) game (although with some minor modifications). To get the most out of this repository you should read this `README.md` carefully, and also closely examine the repository issues, which demonstrate an approach to code review for `.aia` files.
 
 ## Creating new repositories
 If you are unfamiliar with the GitHub workflow, or need a refresher on how GitHub works there are many excellent guides available that teach some of the basics. Our internally developed [GitHub and GitHub Desktop Reference Guide](https://docs.google.com/document/d/1gyy_7hXB4RSJ_T4Ua1ezKujfr2Ohz3B8EE2e11ZTZyU/edit#) is one such resource, but there are plenty of great guides available via [GitHub Docs](https://docs.github.com/en/get-started/quickstart/hello-world) as well.
@@ -78,6 +78,31 @@ The 'Export selected project...' menu option probably saved your `.aia` file to 
 ![move aia file](./images/manage-aia-2.gif)
 
 ### 3. Commit and push to GitHub
+Open your local repository in GitHub desktop, select (checkmark) the `.aia` file and press the blue 'Commit to main' button to commit to the repository (note that GitHub Desktop will populate a semi-reasonable commit message for you based on your file selections. If you are committing just one file the message - in this case, "Create SpaceInvadersModified.aia" - is sufficient). You can choose to push your changes right away, or wait until later. 
+
+![commit and push](./images/manage-aia-3.gif)
+
+## `AI2` code review strategies
+Managing a code review for `AI2` projects requires that the reviewer clones the repository (or, at least, downloads the `.aia` file), then imports the `.aia` file into the `AI2` web app (via Projects > "Import project (.aia) from my computer" in the `AI2` app. Note that the import from repository option probably won't work since repositories are likely private).
+
+Once you've cloned the `.aia` and have imported it into your `AI2` web app you can write some comments as a review on the GitHub repository. 
+
+### 1. Open the Issues tab on the GitHub repository
+In the future, we'll use pull requests for code review. For `AI2` projects we'll use issues.
+
+![open issues tab](./images/review-aia-1.png)
+
+### 2. Press the green New issue button
+It's also a good idea to take a look through existing issues to see if what you intend to write about has already been addressed. 
+
+![create new issue](./images/review-aia-2.png)
+
+### 3. Write up comments - use markdown!
+Include a descriptive title and more details in the description section. Issues support markdown (click the circled "Markdown is supported" link to see more information about Markdown), so please wrap references to code in backticks. Use the Preview tab to see what your comments will look like before submitting. 
+
+Best practices with issues state that you should keep each issue to a single issue/fix/comment. Please don't use issues to write a laundry list of complaints! For our purposes with Week 2 homework, a single issue per code review is sufficient.
+
+![issue creation](./images/review-aia-3.png)
 
 ## Conclusion
-
+Like I said above, there are many - _many_ - ways to create new GitHub repositories. Feel free to use the approach outlined here, or use an alternative approach. Either way, technical hang-ups with Git and GitHub aren't uncommon, so if you run into any issues don't hesitate to reach out to me or your peers, on Slack or via email. The sooner you ask for help, the quicker you'll find a solution!
